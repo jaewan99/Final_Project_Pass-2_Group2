@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "664b29706bfd10a41b117b7e"
+  },
+  "code": 100,
+  "name": "Accounting"
+},
+{
+  "_id": {
+    "$oid": "664b2ae6b1ddb15d9497cd14"
+  },
+  "code": 200,
+  "name": "Calculus"
+},
+{
+  "_id": {
+    "$oid": "664b2afcb1ddb15d9497cd15"
+  },
+  "code": 300,
+  "name": "Information Technology"
+},
+{
+  "_id": {
+    "$oid": "664b2b08b1ddb15d9497cd16"
+  },
+  "code": 400,
+  "name": "Literature"
+},
+{
+  "_id": {
+    "$oid": "664b2b12b1ddb15d9497cd17"
+  },
+  "code": 500,
+  "name": "Philosophy"
+}]

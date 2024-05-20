@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "664b269b6bfd10a41b117b7b"
+  },
+  "username": "joben@example.com",
+  "password": "Ch@ng3m3!",
+  "first_name": "Joben",
+  "last_name": "Ilagan"
+},
+{
+  "_id": {
+    "$oid": "664b28076bfd10a41b117b7d"
+  },
+  "username": "jaewan.bae@student.ateneo.edu",
+  "password": "ateneo",
+  "first_name": "Jaewan",
+  "last_name": "Bae"
+},
+{
+  "_id": {
+    "$oid": "664b54d25826adc07c8c2462"
+  },
+  "username": "bjw9876@yahoo.com",
+  "password": "123",
+  "first_name": "Jaewan",
+  "last_name": "Bae"
+}]

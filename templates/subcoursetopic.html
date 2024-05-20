@@ -1,0 +1,31 @@
+{% include "header.html" %}
+
+<h4>
+  Learn more from {{ subcourse_topic['maintopics']}} / {{
+  subcourse_topic['subtopiccode']}}:
+</h4>
+
+<h6>{{ subcourse_topic['videolink']}}</h6>
+
+<svg width="300" height="130" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="100" x="10" y="10" rx="20" ry="20" fill="black" />
+</svg>
+
+{% if session["user"] is defined %}
+<h4>Previous Memo</h4>
+{% for comment in usercomments %}
+<h6>- {{ comment['comment'] }}</h6>
+{% endfor %}
+
+<h4>Post a Memo</h4>
+
+<form action="addusercomment" method="post">
+  <input
+    type="hidden"
+    name="subtopiccode"
+    value="{{ subcourse_topic['subtopiccode'] }}"
+  />
+  <textarea name="comment" rows="4" cols="50"></textarea>
+  <input type="submit" value="Submit" />
+</form>
+{% endif %} {% include "footer.html" %}

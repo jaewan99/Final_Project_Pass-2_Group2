@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "664b3e096bfd10a41b117b81"
+  },
+  "subcode": 101,
+  "subtopiccode": 101,
+  "maintopics": [
+    "Overview of Financial Statements",
+    "Financial Ratios",
+    "Cash Flow Analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "664b4b4ab1ddb15d9497cd4e"
+  },
+  "subcode": 101,
+  "subtopiccode": 111,
+  "maintopics": "Balance Sheet Analysis",
+  "videolink": "Video about Balance Sheet Analysis"
+},
+{
+  "_id": {
+    "$oid": "664b4b6fb1ddb15d9497cd4f"
+  },
+  "subcode": 101,
+  "subtopiccode": 121,
+  "maintopics": "Liquidity Ratios (e.g., Current Ratio, Quick Ratio)",
+  "videolink": "Video about Liquidity Ratios"
+},
+{
+  "_id": {
+    "$oid": "664b4b8eb1ddb15d9497cd50"
+  },
+  "subcode": 101,
+  "subtopiccode": 131,
+  "maintopics": "Operating Cash Flow Analysis",
+  "videolink": "Video about Balance Sheet Analysis"
+}]

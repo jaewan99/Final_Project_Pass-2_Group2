@@ -1,0 +1,48 @@
+{% include "header.html" %}
+
+<p>Let's Get started:</p>
+<h4>what subjects would like to learn or improve in?:</h4>
+
+<table class="table">
+  <tbody>
+    <tr>
+      {% for course in courses %} {% if course['code'] == 100 %}
+      <td class="table-primary">
+        <a href="coursedetails?code={{ course['code']}}">
+          {{ course['name'] }}
+        </a>
+      </td>
+      {% elif course['code'] == 200 %}
+      <td class="table-secondary">{{ course['name'] }}</td>
+      {% elif course['code'] == 300 %}
+      <td class="table-success">{{ course['name'] }}</td>
+      {% elif course['code'] == 400 %}
+      <td class="table-danger">{{ course['name'] }}</td>
+      {% elif course['code'] == 500 %}
+      <td class="table-warning">{{ course['name'] }}</td>
+      {% endif %} {% endfor %}
+    </tr>
+  </tbody>
+</table>
+<table class="table table-bordered" style="border-width: 4px">
+  <tbody>
+    <tr>
+      {% for subcourse in subcourses %} {% if subcourse['code'] == 100 %}
+      <td class="table-primary">
+        <a href="subcoursedetails?code={{ subcourse['subcode'] }}"
+          >{{ subcourse['name'] }}</a
+        >
+      </td>
+      {% elif subcourse['code'] == 200 %}
+      <td class="table-secondary">{{ subcourse['name'] }}</td>
+      {% elif subcourse['code'] == 300 %}
+      <td class="table-success">{{ subcourse['name'] }}</td>
+      {% elif subcourse['code'] == 400 %}
+      <td class="table-danger">{{ subcourse['name'] }}</td>
+      {% elif subcourse['code'] == 500 %}
+      <td class="table-warning">{{ subcourse['name'] }}</td>
+      {% endif %} {% endfor %}
+    </tr>
+  </tbody>
+</table>
+{% include "footer.html" %}

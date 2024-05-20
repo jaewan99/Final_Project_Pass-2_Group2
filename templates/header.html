@@ -1,0 +1,25 @@
+<html>
+  <header>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .footer {
+        font-size: 10px;
+      }
+    </style>
+  </header>
+  <body class="p-4">
+    <p>Study Buddy, Learn More with fun</p>
+    <a href="/">Home</a> | {% if session["user"] is defined %} Welcome, {{
+    session["user"]["first_name"] }}. |
+    <a href="/usercomment"> View My Memo</a>|
+    <a href="/changepassword"> Change Password</a>|
+    <a href="/logout">Logout</a>| {% else %}
+    <a href="/login">Login</a>
+    {% endif %}
+  </body>
+</html>

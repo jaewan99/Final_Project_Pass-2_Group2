@@ -1,0 +1,13 @@
+{% include "header.html" %}
+<h1>Previous Memo</h1>
+
+{% if session["user"] is defined %} {% for comment in usercomments %}
+<h4>
+  Course
+  <a href="subcoursetopic?subtopiccode={{ comment['subtopiccode'] }}"
+    >{{ comment['subtopiccode'] }}</a
+  >
+  -- {{ comment['comment'] }}
+</h4>
+
+{% endfor %} {% endif %} {% include "footer.html" %}

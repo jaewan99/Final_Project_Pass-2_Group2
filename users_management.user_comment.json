@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "664b56d2ed54a72278117b7b"
+  },
+  "username": "jaewan.bae@student.ateneo.edu",
+  "comment": "3:14 - Talks about assets",
+  "subtopiccode": 111
+},
+{
+  "_id": {
+    "$oid": "664b6425783dbd44d908949f"
+  },
+  "username": "jaewan.bae@student.ateneo.edu",
+  "comment": "- 4:00 - talks about liabilities",
+  "subtopiccode": 111
+},
+{
+  "_id": {
+    "$oid": "664b643b783dbd44d90894a0"
+  },
+  "username": "jaewan.bae@student.ateneo.edu",
+  "comment": "- 1:00 - start lecture",
+  "subtopiccode": 121
+}]

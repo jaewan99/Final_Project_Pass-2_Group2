@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "664b34fd6bfd10a41b117b7f"
+  },
+  "code": 100,
+  "subcode": 101,
+  "name": "Financial Statement Analysis"
+},
+{
+  "_id": {
+    "$oid": "664b35ffb1ddb15d9497cd26"
+  },
+  "code": 100,
+  "subcode": 102,
+  "name": "Cost Accounting"
+},
+{
+  "_id": {
+    "$oid": "664b3613b1ddb15d9497cd27"
+  },
+  "code": 100,
+  "subcode": 103,
+  "name": "Taxation Principles"
+}]

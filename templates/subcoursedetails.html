@@ -1,0 +1,46 @@
+{% include "header.html" %}
+
+<h4>Learn more from {{ subcourse.name }}:</h4>
+
+<table class="table table-bordered" style="border-width: 4px">
+  <thead class="table-dark">
+    <tr>
+      {% for subtopichead in subcourse_topics_head %}
+      <td>{{ subtopichead }}</td>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {% for subtopic in subcourse_topics_list %}
+      <td class="table-primary">
+        <a href="subcoursetopic?subtopiccode={{subtopic['subtopiccode']}}">
+          {{ subtopic['maintopics'] }}
+        </a>
+      </td>
+      {% endfor %}
+    </tr>
+    <tr>
+      <td class="table-primary">Income Statement Analysis</td>
+      <td class="table-primary">
+        Solvency Ratios (e.g., Debt-to-Equity Ratio, Interest Coverage Ratio)
+      </td>
+      <td class="table-primary">Investing Cash Flow Analysis</td>
+    </tr>
+    <tr>
+      <td class="table-primary">Cash Flow Statement Analysis</td>
+      <td class="table-primary">
+        Profitability Ratios (e.g., Return on Assets, Return on Equity)
+      </td>
+      <td class="table-primary">Financing Cash Flow Analysis</td>
+    </tr>
+    <tr>
+      <td class="table-primary">Statement of Shareholders' Equity</td>
+      <td class="table-primary">
+        Efficiency Ratios (e.g., Inventory Turnover, Receivables Turnover)
+      </td>
+      <td class="table-primary"></td>
+    </tr>
+  </tbody>
+</table>
+{% include "footer.html" %}
